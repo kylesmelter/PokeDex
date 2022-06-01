@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
