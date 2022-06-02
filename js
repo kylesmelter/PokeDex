@@ -35,3 +35,9 @@ function search() {
       data.filter((x) => console.log(x.location_area.name));
     });
 }
+
+document.querySelector(".reset").addEventListener("click", refresh);
+
+function refresh() {
+  location.reload();
+}
