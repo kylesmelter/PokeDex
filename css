@@ -10,14 +10,26 @@ h3 {
   text-align: center;
 }
 
+.title {
+  margin-top: 5%;
+}
+
+.teammate {
+  margin-top: 2%;
+}
+
 .choice {
   display: flex;
   justify-content: center;
+  gap: 1%;
+  margin-top: 1%;
 }
 
 img {
   display: block;
   margin: 0 auto;
+  height: 300px;
+  margin-top: 7%;
 }
 
 p {
