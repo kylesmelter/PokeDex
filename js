@@ -13,16 +13,14 @@ function search() {
       document.querySelector("img").src =
         data.sprites.other["official-artwork"].front_default;
       document.querySelector("h3").innerText = data.name;
-      document.querySelector(
-        ".height"
-      ).innerText = `Height/Length: ${data.height} feet`;
-      document.querySelector(
-        ".weight"
-      ).innerText = `Weight: ${data.weight} pounds`;
+      document.querySelector(".height").innerText =
+        "Height/Length:" + " " + heightToFeet(data.height) + " " + "feet";
+      document.querySelector(".weight").innerText =
+        "Weight:" + " " + weightToPounds(data.weight) + " " + "pounds";
       //   data.types.forEach((obj) => console.log(obj.type.name));
       data.types.forEach((obj) => {
         // console.log(obj.type.name);
-
+        const pokeType = "Types";
         const li = document.createElement("li");
 
         li.textContent = obj.type.name;
