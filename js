@@ -13,8 +13,12 @@ function search() {
       document.querySelector("img").src =
         data.sprites.other["official-artwork"].front_default;
       document.querySelector("h3").innerText = data.name;
-      document.querySelector(".height").innerText = data.height;
-      document.querySelector(".weight").innerText = data.weight;
+      document.querySelector(
+        ".height"
+      ).innerText = `Height/Length: ${data.height} feet`;
+      document.querySelector(
+        ".weight"
+      ).innerText = `Weight: ${data.weight} pounds`;
       //   data.types.forEach((obj) => console.log(obj.type.name));
       data.types.forEach((obj) => {
         // console.log(obj.type.name);
@@ -47,4 +51,12 @@ document.querySelector(".reset").addEventListener("click", refresh);
 
 function refresh() {
   location.reload();
+}
+
+function weightToPounds(w) {
+  return Math.round((w / 4.536) * 100) / 100;
+}
+
+function heightToFeet(h) {
+  return Math.round((h / 3.048) * 100) / 100;
 }
