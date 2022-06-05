@@ -6,7 +6,8 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
 }
 
@@ -34,8 +35,17 @@ img {
 
 p {
   text-align: center;
+  line-height: 1.6;
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2%;
 }
 
 ul {
   text-align: center;
+  list-style: none;
 }
