@@ -32,7 +32,14 @@ function search() {
     .then((data) => {
       //   console.log(data);
 
-      data.filter((x) => console.log(x.location_area.name));
+      //   data.filter((x) => console.log(x.location_area.name));
+
+      data.filter((x) => {
+        const typeLi = document.createElement("li");
+
+        typeLi.textContent = x.location_area.name;
+        document.querySelector(".locations").appendChild(typeLi);
+      });
     });
 }
 
