@@ -20,11 +20,11 @@ function search() {
       //   data.types.forEach((obj) => console.log(obj.type.name));
       data.types.forEach((obj) => {
         // console.log(obj.type.name);
-        const pokeType = "Types";
         const li = document.createElement("li");
 
         li.textContent = obj.type.name;
 
+        document.querySelector(".types-heading").innerText = "Type(s)";
         document.querySelector(".types").appendChild(li);
       });
     });
@@ -40,6 +40,8 @@ function search() {
         const typeLi = document.createElement("li");
 
         typeLi.textContent = x.location_area.name;
+
+        document.querySelector(".locations-heading").innerText = "Location(s)";
         document.querySelector(".locations").appendChild(typeLi);
       });
     });
