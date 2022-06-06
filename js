@@ -1,3 +1,4 @@
+
 document.querySelector("button").addEventListener("click", search);
 
 function search() {
@@ -74,4 +75,12 @@ function heightToFeet(h) {
 
 function capitalizeTypes(types) {
   return types.charAt(0).toUpperCase() + types.slice(1);
+}
+
+function capitalizeLocations(locations) {
+  let result = locations.replaceAll("-", " ").split(" ");
+  for (let i = 0; i <= result.length - 1; i++) {
+    result[i] = result[i][0].toUpperCase + result[i].slice(1);
+  }
+  return result.join(" ");
 }
